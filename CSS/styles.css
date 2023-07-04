@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(250, 224, 224);
+}
+
+.divTitulos{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px;
+    color: white;
+    background-color: rgb(88, 5, 5);
+    padding: 5px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divLista {
+    background-color: rgb(206, 162, 106);
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
