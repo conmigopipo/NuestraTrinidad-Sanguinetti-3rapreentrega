@@ -23,7 +23,7 @@ function comprar() {
     let productoSeleccionado = buscarProducto(codigo)
     if (productoSeleccionado !== undefined){
         carrito.push(productoSeleccionado)
-        console.log(productoSeleccionado.nombre + " se agregó a su Carrito. 🛒")
+        console.log(productoSeleccionado.nombre + productoSeleccionado.imagen + " se agregó a su Carrito. 🛒")
         let respuesta = confirm("¿Desea comprar otro producto?")
         if(respuesta === true){
             comprar()
