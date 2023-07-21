@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreEntrega3Sanguinetti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script src="/JS/arrays.js"></script>
+    <script defer src="./JS/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.18/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.18/dist/sweetalert2.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <main>
+        <div class="divTitulos shadow text-center">
+            <h2>Tu Carrito.</h2>
+            <button class="boton-volver"><a href="/index.html">Volver a la tienda</a></button>
+        </div>  
+
+        <div class="divLista shadow row" id="divProductosEnCarrito">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCarrito">
+                    <th>Tu carrito está vacío.</th>
+                </tbody>
+            </table>
+        </div>
+        <div class="row justify-content-center p-2">
+            <button id="botonFinalizarCompra" class="col-5 boton-finalizar-compra">Finalizar Compra</button>
+            <div class="col-5" id="totalCarrito"></div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

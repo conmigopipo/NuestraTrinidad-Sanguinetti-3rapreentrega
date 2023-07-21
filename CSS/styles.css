@@ -1,33 +1,94 @@
 body{
     margin: 0;
     padding: 0;
+    color: gainsboro;
 }
 
 body{
-    background-color: rgb(250, 224, 224);
+    background-color: rgb(30, 28, 28);
 }
 
 .divTitulos{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 10px;
     color: white;
-    background-color: rgb(88, 5, 5);
-    padding: 5px;
+    background-color: rgb(56, 24, 24);
+    padding: 15px;
     padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+}
+
+.divSearch{
+    background-color: rgb(48, 16, 50);
+    padding: 10px;
+    margin: 10px;
+}
+.barra-Buscar{
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 38, 83);
+    border-radius: 10px;
+    border-color: black;
+    border-width: 3.5px;
 }
 
 .divLista {
-    background-color: rgb(206, 162, 106);
+    background-color: rgb(55, 44, 29);
     margin: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+} 
+
+.divProducto{
+    background-color: rgb(118, 86, 47);
+    border-radius: 40%;
+    margin: 15px;
+}
+
+.boton-producto{
+    color: rgb(0, 0, 0);
+    background-color: rgb(118, 92, 50);
+    border-radius: 15%;
+    border-style:solid;
+}
+
+.link-a-carrito{
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.boton-volver{
+    color: rgb(0, 0, 0);
+    background-color: rgb(122, 101, 67);
+    border-radius: 5%;
+    border-style:solid;
+}
+
+.boton-volver a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.contador-carrito{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    color:white;
+}
+
+.carrito-icono{
     display: flex;
     justify-content: center;
 }
 
-footer{
-    display: flex;
-    margin: 10px;
-    justify-content: center;
+.boton-finalizar-compra{
+    background-color: rgb(88, 44, 44);
+    color: beige;
+    border-radius: 30px;
+    width: 200px;
 }
