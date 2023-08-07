@@ -1,7 +1,7 @@
 const tarjetas = document.querySelector("div#divProductos")
 const buscar = document.querySelector("input#barraBusqueda")
 const carritoIndex = document.querySelector("#contadorCarrito")
-
+const URLArray = "js/productos.json"
 
 
 function crearTarjetaProducto (producto){
@@ -60,9 +60,6 @@ buscar.addEventListener("search", ()=>{
     }
 }) 
 
-cargarProductos(productos)
-
-
 buscar.addEventListener("search", ()=>{
     if (buscar.value.trim() !== "") {
         let arrayBusqueda = productos.filter((producto)=> producto.nombre.toLowerCase().includes(buscar.value.trim().toLowerCase()))
@@ -70,3 +67,17 @@ buscar.addEventListener("search", ()=>{
 
     } 
 }) 
+
+async function cargarArrayURL (){
+    try{
+        const response = await fetch(URLArray)
+        const data = await response.json()
+        productos.push(...data)
+        cargarProductos(productos)
+    } catch(error){
+        console.error("se ha producido un error", error)
+        tarjetas.innerHTML = "<div> <h3>Error al conectarse con el servidor, por favor intentelo de nuevo.</h3> </div>"
+    }
+}
+
+cargarArrayURL ()
