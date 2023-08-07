@@ -22,7 +22,7 @@ function cargarProductosCarrito(carrito){
 cargarProductosCarrito(carrito)
 
 function mostrarTotal(){
-    return`<p>Total: USD ${total}<p>`
+    return`<p>Total: USD ${total.toFixed(2)}<p>`
 }
 
 let total = 0
